@@ -1,0 +1,1 @@
+This repository demonstrates a common CSS specificity issue. The `bug.css` file contains the problematic code, while `bugSolution.css` offers a solution.  The issue arises from conflicting styles applied to elements with overlapping selectors. The solution focuses on understanding and resolving such conflicts to achieve intended styling.
