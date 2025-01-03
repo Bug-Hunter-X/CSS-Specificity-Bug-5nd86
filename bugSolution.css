@@ -1,0 +1,32 @@
+This updated CSS code resolves the specificity issue by either making the `.box` selector more specific or by using the `!important` flag (though generally `!important` should be avoided as much as possible).  The preferred approach is to reorganize your selectors for improved clarity and avoid overriding styles unintentionally. 
+
+Solution 1 (More Specific Selector):
+```css
+#container {
+  background-color: lightgray;
+}
+
+#container .box {
+  background-color: yellow;
+}
+
+.box {
+  background-color: lightblue;
+  /* This rule will now apply to .box elements outside #container*/
+}
+```
+
+Solution 2 (Using !important - Less Recommended):
+```css
+#container {
+  background-color: lightgray;
+}
+
+.box {
+  background-color: lightblue !important;
+}
+
+#container .box {
+  background-color: yellow;
+}
+```
