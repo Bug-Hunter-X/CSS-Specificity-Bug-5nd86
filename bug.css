@@ -1,0 +1,1 @@
+The following CSS code snippet demonstrates a common issue where the specificity of selectors leads to unexpected results.  The intention is to style both `.box` elements, however, only the second `.box` element is styled because the more specific selector `#container .box` overrides the less specific `.box` selector.
